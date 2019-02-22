@@ -1,0 +1,10 @@
+// SublimeLinter Settings - User
+{
+  "delay": 1.0,
+  "debug": true,
+  "linters":{
+    "eslint":{
+      "selector": "text.html.vue, source.js - meta.attribute-with-value"
+    }
+  }
+}
