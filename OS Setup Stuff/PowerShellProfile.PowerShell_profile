@@ -1,9 +1,9 @@
 # GENERAL STUFF
-function cd. { cd ../ }
-function cd.. { cd ../../ }
-function cd... { cd ../../../ }
-function cd.... { cd ../../../../ }
-function cd..... { cd ../../../../../ }
+function d1 { cd ../ }
+function d2 { cd ../../ }
+function d3 { cd ../../../ }
+function d4 { cd ../../../../ }
+function d5 { cd ../../../../../ }
 
 function chrome($page){
   Start-Process "chrome.exe" $page
