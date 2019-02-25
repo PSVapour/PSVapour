@@ -54,6 +54,7 @@ zeroOverlapClaimCandidates.forEach(claim => {
     for (var x = startPos[0]; x < (startPos[0] + size[0]); x++) {
       if (fabric[y][x] !== 1) {
         didOverlap = true;
+        return;
       }
     }
   }

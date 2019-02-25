@@ -1,0 +1,34 @@
+# GENERAL STUFF
+function cd. { cd ../ }
+function cd.. { cd ../../ }
+function cd... { cd ../../../ }
+function cd.... { cd ../../../../ }
+function cd..... { cd ../../../../../ }
+
+function chrome($page){
+  Start-Process "chrome.exe" $page
+}
+
+# NODE / NPM STUFF
+function npm-i($mod) { npm install $mod --save }
+function npm-d($mod) { npm install $mod --save-dev }
+function npm-g($mod) { npm install -g $mod }
+
+
+function repo ($location) { cd C:/Repos/$location }
+
+
+# PROJECT STUFF
+function stc($location, $process) {
+  cd C:/Repos/stc-full/$location
+  if ($process) {
+        npm run $process
+    }
+}
+
+function parsec($location, $process) {
+    cd C:/Repos/parsec/$location
+    if ($process) {
+        npm run $process
+    }
+}
